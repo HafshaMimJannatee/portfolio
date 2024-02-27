@@ -372,12 +372,13 @@ section .explanation{
 
 /*===Skills===*/
 .skill-flex-container{
-	flex-wrap: wrap;
-	flex-direction: row;
 	justify-content: space-between;
 	padding: 3em;
 }
 /*===Portfolio===*/
+.project-flex-container{
+	padding: 3em;
+}
 /*===About===*/
 /*===Curriculum vitae===*/
 /*===Contact===*/
@@ -429,7 +430,7 @@ nav{
 /*==Body==*/
 
 /*===Skills===*/
-.skill-flex-container{
+.skill-flex-container, .project-flex-container{
 	padding: 3em 6em;
 }
 /*===Portfolio===*/
