@@ -377,7 +377,7 @@ section .explanation{
 }
 /*===Portfolio===*/
 .project-flex-container{
-	padding: 3em 0;
+	padding: 3em;
 	background-color: blue;
 }
 /*===About===*/
