@@ -1,0 +1,287 @@
+@media (prefers-reduced-motion: no-preference) {
+	*{
+	scroll-behavior: smooth; 
+	}
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    --deepest:#122112;
+	--deep:#244224;
+    --lightest: #DAD3BE;
+    --light: #B7B597;
+  }
+/*==Position==*/
+.sf-relative{
+	position: relative;
+}
+.sf-absolute{
+	position: absolute;
+}
+.sf-inset-0{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.sf-w-full{
+	width: 100%;
+}
+.sf-h-full{
+	height:100%;
+}
+/*===responsive===*/
+[class*="sf-col-"] {
+  float: left;
+}
+.sf-row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*Grid*/
+.sf-grd{display:grid;}
+.sf-grd2{grid-template-columns: auto auto;}
+.sf-grd3{grid-template-columns: auto auto auto;}
+.sf-grd4{grid-template-columns: auto auto auto auto;}
+/*Flex*/
+.sf-flex{display: flex;}
+@media (max-width: 576px) {
+/*Grid*/
+.sf-grd-mini{display:grid;}
+.sf-grd2-mini{grid-template-columns: auto auto;}
+.sf-grd3-mini{grid-template-columns: auto auto auto;}
+.sf-grd4-mini{grid-template-columns: auto auto auto auto;}
+
+  /* Custom styles for devices with width less than 576px */
+	.sf-row-mini::after {
+	  content: "";
+	  clear: both;
+	  display: block;
+	}
+	/*column size*/
+	  .sf-col-mini-1 {width: 8.33%;}
+	  .sf-col-mini-2 {width: 16.66%;}
+	  .sf-col-mini-3 {width: 25%;}
+	  .sf-col-mini-4 {width: 33.33%;}
+	  .sf-col-mini-5 {width: 41.66%;}
+	  .sf-col-mini-6 {width: 50%;}
+	  .sf-col-mini-7 {width: 58.33%;}
+	  .sf-col-mini-8 {width: 66.66%;}
+	  .sf-col-mini-9 {width: 75%;}
+	  .sf-col-mini-10 {width: 83.33%;}
+	  .sf-col-mini-11 {width: 91.66%;}
+	  .sf-col-mini-12 {width: 100%;}		
+	/*==Font-size start==*/
+	h1,
+	h2,
+	h3,
+	h4,
+	h5{
+		font-size: 1em;
+	}
+	h6{
+		font-size: 0.9em;
+	}
+	.sf-code{
+		font-size: 0.8em !important;
+	}
+	.sf-btn,
+	ol,
+	ul,
+	p,
+	a{
+		font-size: 0.8em;
+	}
+}
+
+/* [sm] Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+/*Grid*/
+.sf-grd-sm{display:grid;}
+.sf-grd2-sm{grid-template-columns: auto auto;}
+.sf-grd3-sm{grid-template-columns: auto auto auto;}
+.sf-grd4-sm{grid-template-columns: auto auto auto auto;}
+
+/* Custom styles for devices with width 576px and up */
+	.sf-row-sm::after {
+	content: "";
+	clear: both;
+	display: block;
+	}
+/*column size*/
+  .sf-col-sm-1 {width: 8.33%;}
+  .sf-col-sm-2 {width: 16.66%;}
+  .sf-col-sm-3 {width: 25%;}
+  .sf-col-sm-4 {width: 33.33%;}
+  .sf-col-sm-5 {width: 41.66%;}
+  .sf-col-sm-6 {width: 50%;}
+  .sf-col-sm-7 {width: 58.33%;}
+  .sf-col-sm-8 {width: 66.66%;}
+  .sf-col-sm-9 {width: 75%;}
+  .sf-col-sm-10 {width: 83.33%;}
+  .sf-col-sm-11 {width: 91.66%;}
+  .sf-col-sm-12 {width: 100%;}	 
+	/*==Font-size start==*/	
+	h1,
+	h2,
+	h3{
+		font-size: 1.1em;
+	}
+	h4,
+	h5,
+	h6{
+		font-size: 1em;
+	}
+	.sf-code{
+		font-size: 0.9em !important;
+	}
+	.sf-btn,
+	ol,
+	ul,
+	p,
+	a{
+		font-size: 0.9em;
+	}
+/*==Font-size end==*/	
+}
+
+/* [md] Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+/*Grid*/
+.sf-grd-md{display:grid;}
+.sf-grd2-md{grid-template-columns: auto auto;}
+.sf-grd3-md{grid-template-columns: auto auto auto;}
+.sf-grd4-md{grid-template-columns: auto auto auto auto;}
+
+/* Custom styles for devices with width 768px and up */
+.sf-row-md::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*column size*/
+  .sf-col-md-1 {width: 8.33%;}
+  .sf-col-md-2 {width: 16.66%;}
+  .sf-col-md-3 {width: 25%;}
+  .sf-col-md-4 {width: 33.33%;}
+  .sf-col-md-5 {width: 41.66%;}
+  .sf-col-md-6 {width: 50%;}
+  .sf-col-md-7 {width: 58.33%;}
+  .sf-col-md-8 {width: 66.66%;}
+  .sf-col-md-9 {width: 75%;}
+  .sf-col-md-10 {width: 83.33%;}
+  .sf-col-md-11 {width: 91.66%;}
+  .sf-col-md-12 {width: 100%;}	
+}
+
+/* [lg] Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+/*Grid*/
+.sf-grd-lg{display:grid;}
+.sf-grd2-lg{grid-template-columns: auto auto;}
+.sf-grd3-lg{grid-template-columns: auto auto auto;}
+.sf-grd4-lg{grid-template-columns: auto auto auto auto;}
+
+/* Custom styles for devices with width 992px and up */
+.sf-row-lg::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*column size*/
+  .sf-col-lg-1 {width: 8.33%;}
+  .sf-col-lg-2 {width: 16.66%;}
+  .sf-col-lg-3 {width: 25%;}
+  .sf-col-lg-4 {width: 33.33%;}
+  .sf-col-lg-5 {width: 41.66%;}
+  .sf-col-lg-6 {width: 50%;}
+  .sf-col-lg-7 {width: 58.33%;}
+  .sf-col-lg-8 {width: 66.66%;}
+  .sf-col-lg-9 {width: 75%;}
+  .sf-col-lg-10 {width: 83.33%;}
+  .sf-col-lg-11 {width: 91.66%;}
+  .sf-col-lg-12 {width: 100%;}
+/*==Font-size start==*/	
+	h1{
+		font-size: 1.9em;
+	}
+	h2{
+		font-size: 1.6em;
+	}
+	h3{
+		font-size: 1.5em;
+	}
+.sf-code{
+		font-size: 1em !important;
+	}
+.sf-btn,
+	ol,
+	ul,
+	p,
+	a{
+		font-size: 1em;
+	}
+/*==Font-size end==*/	
+}
+
+/* [xl] X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+/*Grid*/
+.sf-grd-xl{display:grid;}
+.sf-grd2-xl{grid-template-columns: auto auto;}
+.sf-grd3-xl{grid-template-columns: auto auto auto;}
+.sf-grd4-xl{grid-template-columns: auto auto auto auto;}
+
+/* Custom styles for devices with width 1200px and up */
+.sf-row-xl::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*column size*/
+  .sf-col-xl-1 {width: 8.33%;}
+  .sf-col-xl-2 {width: 16.66%;}
+  .sf-col-xl-3 {width: 25%;}
+  .sf-col-xl-4 {width: 33.33%;}
+  .sf-col-xl-5 {width: 41.66%;}
+  .sf-col-xl-6 {width: 50%;}
+  .sf-col-xl-7 {width: 58.33%;}
+  .sf-col-xl-8 {width: 66.66%;}
+  .sf-col-xl-9 {width: 75%;}
+  .sf-col-xl-10 {width: 83.33%;}
+  .sf-col-xl-11 {width: 91.66%;}
+  .sf-col-xl-12 {width: 100%;}		
+}
+
+/* [xxl] XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+/*Grid*/
+.sf-grd-xxl{display:grid;}
+.sf-grd2-xxl{grid-template-columns: auto auto;}
+.sf-grd3-xxl{grid-template-columns: auto auto auto;}
+.sf-grd4-xxl{grid-template-columns: auto auto auto auto;}
+
+/* Custom styles for devices with width 1400px and up */
+.sf-row-xxl::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*column size*/
+  .sf-col-xxl-1 {width: 8.33%;}
+  .sf-col-xxl-2 {width: 16.66%;}
+  .sf-col-xxl-3 {width: 25%;}
+  .sf-col-xxl-4 {width: 33.33%;}
+  .sf-col-xxl-5 {width: 41.66%;}
+  .sf-col-xxl-6 {width: 50%;}
+  .sf-col-xxl-7 {width: 58.33%;}
+  .sf-col-xxl-8 {width: 66.66%;}
+  .sf-col-xxl-9 {width: 75%;}
+  .sf-col-xxl-10 {width: 83.33%;}
+  .sf-col-xxl-11 {width: 91.66%;}
+  .sf-col-xxl-12 {width: 100%;}
+}
