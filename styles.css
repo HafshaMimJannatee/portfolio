@@ -12,6 +12,7 @@
 	box-shadow: 2px 2px 5px black;
 	position: fixed;
 	top:0;
+	z-index:10;
 }
 /*Logo*/
 .sf-logo-tpnv{
