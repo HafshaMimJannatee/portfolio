@@ -8,14 +8,6 @@
     margin: 0;
     padding: 0;
   }
-  :root {
-    --deepest:#122112;
-    --deep:#244224;
-    --lightest: #DAD3BE;
-    --light: #B7B597;
-    --txt-clr: #94837b;
-    --txt-hov-clr: linear-gradient(to right, #94837b , #D3BEA1);
-  }
 /*==Position==*/
 .sf-relative{
 	position: relative;
